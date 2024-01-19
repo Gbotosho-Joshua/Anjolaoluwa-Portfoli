@@ -1,0 +1,79 @@
+/* Define body properties */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: lightblue; /* Set background color */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Set height to 100% of viewport height */
+}
+
+.contact-container {
+    /* light background */
+    background-color: #ffffff;
+
+    /* padding for spacing */
+    padding: 30px;
+
+    /* rounded corners */
+    border-radius: 10px;
+
+    /* box shadow for depth */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    /* fixed width */
+    width: 400px;
+
+    /* 3D transform */
+    transform: rotateY(10deg) translateZ(-100px);
+
+    /* preserve 3D for children */
+    transform-style: preserve-3d;
+}
+
+.contact-container { 
+    /* bounce animation, 2s duration, infinite loop */
+    animation: bounce 2s infinite; 
+   }
+/* bounce animation */
+@keyframes bounce {
+    0% {
+        /* starting position */
+        transform: translateY(0); 
+    }
+    40% {
+        /* jump up */
+        transform: translateY(-20px); 
+    }
+    60% {
+        /* fall down */
+        transform: translateY(-10px); 
+    }
+}
+
+/* center and color text */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+h2 {
+    /* Sets the font size to 15px */
+    font-size: 15px;
+}
+
+form {
+    /* Define flex container */
+    display: flex;
+
+    /* Stack child elements vertically */
+    flex-direction: column;
+}
+
+/* padding and margin for textarea */
+textarea {
+    padding: 10px; /* internal space */
+    margin-bottom: 20px; /* space below textarea */
+}
